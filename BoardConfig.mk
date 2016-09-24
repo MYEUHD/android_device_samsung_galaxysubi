@@ -19,22 +19,19 @@
 # Product-specific compile-time definitions.
 #
 
-#Video Devices
+# Video Devices
 BOARD_SECOND_CAMERA_DEVICE := /dev/video2
 
 # Kernel Config
-TARGET_KERNEL_CONFIG := omni_galaxysmtd_defconfig
+TARGET_KERNEL_CONFIG := custom_galaxysmtd_defconfig
 
 # FM Radio
-BOARD_HAVE_FM_RADIO := true
-BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
-BOARD_FM_DEVICE := si4709
+# BOARD_HAVE_FM_RADIO := true
+# BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
+# BOARD_FM_DEVICE := si4709
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/galaxysmtd/bluetooth
-
-# Recovery
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/galaxysmtd/recovery/recovery_keys.c
 
 TARGET_OTA_ASSERT_DEVICE := galaxys,galaxysmtd,GT-I9000,GT-I9000M,GT-I9000T
 
