@@ -23,7 +23,7 @@
 BOARD_SECOND_CAMERA_DEVICE := /dev/video2
 
 # Kernel Config
-TARGET_KERNEL_CONFIG := custom_galaxysmtd_defconfig
+TARGET_KERNEL_CONFIG := custom_galaxysubi_defconfig
 
 # FM Radio
 # BOARD_HAVE_FM_RADIO := true
@@ -31,9 +31,9 @@ TARGET_KERNEL_CONFIG := custom_galaxysmtd_defconfig
 # BOARD_FM_DEVICE := si4709
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/galaxysmtd/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/galaxysubi/bluetooth
 
-TARGET_OTA_ASSERT_DEVICE := galaxys,galaxysmtd,GT-I9000,GT-I9000M,GT-I9000T
+TARGET_OTA_ASSERT_DEVICE := galaxys,galaxysubi,GT-I9000,GT-I9000M,GT-I9000T
 
 # Import the aries-common BoardConfigCommon.mk
 include device/samsung/aries-common/BoardConfigCommon.mk

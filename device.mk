@@ -39,12 +39,12 @@
 # These are the hardware-specific configuration files
 
 PRODUCT_COPY_FILES += \
-	device/samsung/galaxysmtd/asound.conf:system/etc/asound.conf
+	device/samsung/galaxysubi/asound.conf:system/etc/asound.conf
 
 # Prebuilt kl and kcm keymaps
 PRODUCT_COPY_FILES += \
-	device/samsung/galaxysmtd/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
-	device/samsung/galaxysmtd/aries-keypad.kcm:system/usr/keychars/aries-keypad.kcm
+	device/samsung/galaxysubi/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
+	device/samsung/galaxysubi/aries-keypad.kcm:system/usr/keychars/aries-keypad.kcm
 
 # We have FFC
 PRODUCT_COPY_FILES += \
@@ -63,4 +63,4 @@ $(call inherit-product, device/samsung/aries-common/device_base.mk)
 # half of the device-specific product definition file takes care
 # of the aspects that require proprietary drivers that aren't
 # commonly available
-$(call inherit-product-if-exists, vendor/samsung/galaxysmtd/galaxysmtd-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/galaxysubi/galaxysubi-vendor.mk)

@@ -22,15 +22,15 @@ TARGET_LOW_RAM_DEVICE := true
 
 # Get the long list of APNs
 PRODUCT_COPY_FILES += \
-    device/samsung/galaxysmtd/apns-conf.xml:system/etc/apns-conf.xml
+    device/samsung/galaxysubi/apns-conf.xml:system/etc/apns-conf.xml
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := aosp_galaxysmtd
-PRODUCT_DEVICE := galaxysmtd
+PRODUCT_NAME := aosp_galaxysubi
+PRODUCT_DEVICE := galaxysubi
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := GT-I9000
 PRODUCT_MANUFACTURER := samsung
 
-$(call inherit-product, device/samsung/galaxysmtd/device.mk)
+$(call inherit-product, device/samsung/galaxysubi/device.mk)

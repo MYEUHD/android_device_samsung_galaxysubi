@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_galaxysmtd.mk
+    $(LOCAL_DIR)/aosp_galaxysubi.mk
