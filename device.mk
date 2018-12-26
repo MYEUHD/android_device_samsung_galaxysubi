@@ -36,11 +36,6 @@
 # and is used by people who have access to binary versions of the drivers
 # but not to the original vendor tree. Be sure to update both.
 
-# These are the hardware-specific configuration files
-
-PRODUCT_COPY_FILES += \
-	device/samsung/galaxysubi/asound.conf:system/etc/asound.conf
-
 # Prebuilt kl and kcm keymaps
 PRODUCT_COPY_FILES += \
 	device/samsung/galaxysubi/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
@@ -49,12 +44,6 @@ PRODUCT_COPY_FILES += \
 # We have FFC
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
-
-# This device is hdpi
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := hdpi
-# A list of dpis to select prebuilt apk, in precedence order.
-PRODUCT_AAPT_PREBUILT_DPI := hdpi mdpi xhdpi xxhdpi
 
 # Inherit Aries common device configuration.
 $(call inherit-product, device/samsung/aries-common/device_base.mk)
