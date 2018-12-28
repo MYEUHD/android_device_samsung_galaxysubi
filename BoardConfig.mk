@@ -33,5 +33,7 @@ TARGET_KERNEL_CONFIG := custom_galaxysubi_defconfig
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/galaxysubi/bluetooth
 
+TARGET_OTA_ASSERT_DEVICE := galaxys,galaxysubi,GT-I9000,GT-I9000M,GT-I9000T
+
 # Import the aries-common BoardConfigCommon.mk
 include device/samsung/aries-common/BoardConfigCommon.mk
